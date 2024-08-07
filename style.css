@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
 }
 .header-nav {
   width: 100vw;
@@ -239,6 +239,7 @@ body {
 .home-flash-sale {
   background: #F1E8DC;
   padding: 20px;
+  border-radius: 10px;
 }
 
 .block-title {
@@ -246,7 +247,9 @@ body {
   padding-bottom: 10px;
   display: flex;
   justify-content:center ;
+  border-bottom: 2px solid white;
 }
+
 
 .block-title a {
   text-decoration: none;
@@ -254,6 +257,109 @@ body {
   color:#bf9f70 ;
   font-weight: 500;
 }
+
+.carousel-inner {
+  width: 100%;
+  height: 354px;
+  padding: 0 10px;
+}
+
+.flash-sale {
+  width: 228px;
+  height: 354px;
+  
+  padding:  15px;
+  border-radius: 10px;
+}
+
+.card-img img-fluid {
+  width: 196px;
+  height: 196px;
+}
+
+.card-img span {
+  color: red;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #F43535;
+  font-size: 12px;
+  border-radius: 3px;
+  color: #ffff;
+  height: 20px;
+  width: 45px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-img-overlay {
+  height: calc(100% - 228px);
+  margin-top: 228px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 15px;
+}
+.products-name {
+  margin-top: -8px;
+  text-align: center;
+}
+
+.products-name a {
+  font-family: sans-serif;
+  text-decoration: none;
+  color:black ;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.products-name a:hover {
+  color: #bf9f70;
+}
+
+.price-sale {
+  display: flex;
+  justify-content: space-between;
+}
+.aft-disc {
+  color: rgb(239, 45, 45);
+  font-size: 16px;
+  font-weight: 600;
+}
+.bef-disc {
+  text-decoration: line-through;
+  color: #676767;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.addToCard {
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  padding: 8px 24px;
+  border: none;
+  /* margin-top: 18px; */
+  width: 100%;
+  background-color: #bf9f70;
+  border-radius: 20px;
+}
+
+.addToCard a {
+  text-decoration: none;
+  
+  color:white ;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.carousel-item active {
+  justify-content: space-between;
+}
+
+
 
 /* phần slide sale */
 @media (max-width: 767px) {
@@ -290,3 +396,37 @@ body {
 transform: translateX(0);
 }
 
+/* end section flash sale */
+
+.section-mission {
+  height: 750px;
+  padding-top: 40px;
+}
+
+.mission-block-title {
+  height: 52px;
+  text-align: center;
+}
+
+.mission-block-title h2 {
+  color: #bf9f70;
+  font-size: 32px;
+  line-height: 52px;
+  font-weight: 500;
+  position: relative;
+}
+
+.content-desc {
+  text-align: center;
+  max-width: 1030px;
+  margin: 0px auto;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+}
+
+.content-desc p {
+  color: #231f20;
+  font-size: 18px;
+  line-height: 25px;
+}
