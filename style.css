@@ -264,11 +264,17 @@ body {
   padding: 0 10px;
 }
 
+.box-card-sale {
+  width: 303px;
+  height: 354px;
+  
+}
+
 .flash-sale {
   width: 228px;
   height: 354px;
-  
-  padding:  15px;
+  margin: auto;
+  padding: 15px;
   border-radius: 10px;
 }
 
