@@ -18,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style-index.css" />
   </head>
   <body>
     <div class="header">
@@ -105,7 +105,7 @@
                 </div>
                 <div class="col-sm-6 container-icon-bag">
                   <div class="icon-bag">
-                    <a href="" title="giỏ hàng">
+                    <a href="./cart-page.html" title="giỏ hàng">
                       <img
                         src="//bizweb.dktcdn.net/100/488/726/themes/911609/assets/shopping-cart.svg?1705829900945"
                         alt="Lofi Nest"
@@ -113,7 +113,7 @@
                         height="27"
                       />
                     </a>
-                    <span class="count_item_pr">1</span>
+                    <span class="count_item_pr" id="cart-count">0</span>
                   </div>
                 </div>
               </div>
@@ -286,8 +286,8 @@
                               <span class="aft-disc">2.150.000đ</span>
                               <span class="bef-disc">2.350.000đ</span>
                             </div>
-                            <button class="addToCard">
-                              <a href="#">Thêm vào giỏ hàng</a>
+                            <button class="add-cart-button">
+                              Thêm vào giỏ hàng
                             </button>
                           </div>
                         </div>
@@ -315,8 +315,8 @@
                               <span class="aft-disc">2.250.000đ</span>
                               <span class="bef-disc">350.000đ</span>
                             </div>
-                            <button class="addToCard">
-                              <a href="#">Thêm vào giỏ hàng</a>
+                            <button class="add-cart-button">
+                              Thêm vào giỏ hàng
                             </button>
                           </div>
                         </div>
@@ -344,8 +344,8 @@
                               <span class="aft-disc">5.300.000đ</span>
                               <span class="bef-disc">5.600.000đ</span>
                             </div>
-                            <button class="addToCard">
-                              <a href="#">Thêm vào giỏ hàng</a>
+                            <button class="add-cart-button">
+                              Thêm vào giỏ hàng
                             </button>
                           </div>
                         </div>
@@ -373,8 +373,8 @@
                               <span class="aft-disc">5.200.000đ</span>
                               <span class="bef-disc">5.500.000đ</span>
                             </div>
-                            <button class="addToCard">
-                              <a href="#">Thêm vào giỏ hàng</a>
+                            <button class="add-cart-button">
+                              Thêm vào giỏ hàng
                             </button>
                           </div>
                         </div>
@@ -404,8 +404,8 @@
                               <span class="aft-disc">295.000đ</span>
                               <span class="bef-disc">330.000đ</span>
                             </div>
-                            <button class="addToCard">
-                              <a href="#">Thêm vào giỏ hàng</a>
+                            <button class="add-cart-button">
+                              Thêm vào giỏ hàng
                             </button>
                           </div>
                         </div>
@@ -435,8 +435,8 @@
                               <span class="aft-disc">223.000đ</span>
                               <span class="bef-disc">265.000đ</span>
                             </div>
-                            <button class="addToCard">
-                              <a href="#">Thêm vào giỏ hàng</a>
+                            <button class="add-cart-button">
+                              Thêm vào giỏ hàng
                             </button>
                           </div>
                         </div>
@@ -464,8 +464,8 @@
                               <span class="aft-disc">299.000đ</span>
                               <span class="bef-disc">399.000đ</span>
                             </div>
-                            <button class="addToCard">
-                              <a href="#">Thêm vào giỏ hàng</a>
+                            <button class="add-cart-button">
+                              Thêm vào giỏ hàng
                             </button>
                           </div>
                         </div>
@@ -493,8 +493,8 @@
                               <span class="aft-disc">255.000đ</span>
                               <span class="bef-disc">350.000đ</span>
                             </div>
-                            <button class="addToCard">
-                              <a href="#">Thêm vào giỏ hàng</a>
+                            <button class="add-cart-button">
+                              Thêm vào giỏ hàng
                             </button>
                           </div>
                         </div>
@@ -574,205 +574,13 @@
             <!--  slide new product -->
 
             <div class="container block-card my-3 product-main">
-              <div
-                class="row mx-auto my-auto justify-content-center product-main"
-              >
-                <div
-                  id="recipeCarousel"
-                  class="carousel slide newProduct"
-                  data-bs-ride="carousel"
-                >
-                  <div class="carousel-inner product-main" role="listbox">
-                    <div class="carousel-item newProduct-item active">
-                      <div class="col-md-3">
-                        <div class="box-card-newproduct">
-                          <div class="card product-thumbnail">
-                            <div class="card-img">
-                              <img
-                                src="https://bizweb.dktcdn.net/thumb/large/100/488/726/products/ezgif-com-webp-to-jpg-1-7f340f50-a96d-4fc5-b4c2-d13e54acde92.jpg?v=1690258293973"
-                                class="img-fluid"
-                              />
-                            </div>
-                            <div class="card-info-newProduct">
-                              <h6 class="products-name">
-                                <a href="#">Yến chưng bách niên 1</a>
-                              </h6>
-                              <div class="price-sale">
-                                <span class="aft-disc" style="margin: auto"
-                                  >225.000đ</span
-                                >
-                              </div>
-                              <button class="addToCard">
-                                <a href="#">Tuỳ chọn</a>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item newProduct-item">
-                      <div class="col-md-3">
-                        <div class="box-card-newproduct">
-                          <div class="card product-thumbnail">
-                            <div class="card-img">
-                              <img
-                                src="https://bizweb.dktcdn.net/thumb/large/100/488/726/products/ezgif-com-webp-to-jpg-2-4dce3ead-779b-4cdb-a721-558683ba6202.jpg?v=1690212908537"
-                                class="img-fluid"
-                              />
-                            </div>
-                            <div class="card-info-newProduct">
-                              <h6 class="products-name">
-                                <a href="#">Yến chưng ngọc nữ</a>
-                              </h6>
-                              <div class="price-sale">
-                                <span class="aft-disc" style="margin: auto"
-                                  >250.000đ</span
-                                >
-                              </div>
-                              <button class="addToCard">
-                                <a href="#">Tuỳ chọn</a>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item newProduct-item">
-                      <div class="col-md-3">
-                        <div class="box-card-newproduct">
-                          <div class="card product-thumbnail">
-                            <div class="card-img">
-                              <img
-                                src="https://bizweb.dktcdn.net/thumb/large/100/488/726/products/ezgif-com-webp-to-jpg-2-8ff49a98-920a-420c-9968-ee353f097abf.jpg?v=1690212340047"
-                                class="img-fluid"
-                              />
-                            </div>
-                            <div class="card-info-newProduct">
-                              <h6 class="products-name">
-                                <a href="#">Yến chưng vương dược</a>
-                              </h6>
-                              <div class="price-sale">
-                                <span class="aft-disc" style="margin: auto"
-                                  >225.000đ</span
-                                >
-                              </div>
-                              <button class="addToCard">
-                                <a href="#">Tuỳ chọn</a>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item newProduct-item">
-                      <div class="col-md-3">
-                        <div class="box-card-newproduct">
-                          <div class="card product-thumbnail">
-                            <div class="card-img">
-                              <img
-                                src="https://bizweb.dktcdn.net/thumb/large/100/488/726/products/ezgif-com-webp-to-jpg-4-15d549e2-5c06-455e-a6e2-757534c32a4a.jpg?v=1690211819103"
-                                class="img-fluid"
-                              />
-                            </div>
-                            <div class="card-info-newProduct">
-                              <h6 class="products-name">
-                                <a href="#">Yến chưng long thai</a>
-                              </h6>
-                              <div class="price-sale">
-                                <span class="aft-disc" style="margin: auto"
-                                  >460.000đ</span
-                                >
-                              </div>
-                              <button class="addToCard">
-                                <a href="#">Tuỳ chọn</a>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item newProduct-item">
-                      <div class="col-md-3">
-                        <div class="box-card-newproduct">
-                          <div class="card product-thumbnail">
-                            <div class="card-img">
-                              <img
-                                src="https://bizweb.dktcdn.net/thumb/large/100/488/726/products/ezgif-com-webp-to-jpg-3-274a5853-becb-4964-a41f-c09a0257438b.jpg?v=1690211309807"
-                                class="img-fluid"
-                              />
-                            </div>
-                            <div class="card-info-newProduct">
-                              <h6 class="products-name">
-                                <a href="#">Yến chưng Minh Nhân Yến</a>
-                              </h6>
-                              <div class="price-sale">
-                                <span class="aft-disc" style="margin: auto"
-                                  >250.000</span
-                                >
-                              </div>
-                              <button class="addToCard">
-                                <a href="#">Tuỳ chọn</a>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item newProduct-item">
-                      <div class="col-md-3">
-                        <div class="box-card-newproduct">
-                          <div class="card product-thumbnail">
-                            <div class="card-img">
-                              <img
-                                src="https://bizweb.dktcdn.net/thumb/large/100/488/726/products/ezgif-com-webp-to-jpg-2c717cf9-88fd-45c2-9115-33fb8ead38b7.jpg?v=1690259134163"
-                                class="img-fluid"
-                              />
-                            </div>
-                            <div class="card-info-newProduct">
-                              <h6 class="products-name">
-                                <a href="#">Yến chưng bách niên 2</a>
-                              </h6>
-                              <div class="price-sale">
-                                <span class="aft-disc" style="margin: auto"
-                                  >225.000</span
-                                >
-                              </div>
-                              <button class="addToCard">
-                                <a href="#">Tuỳ chọn</a>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item newProduct-item">
-                      <div class="col-md-3">
-                        <div class="box-card-newproduct">
-                          <div class="card product-thumbnail">
-                            <div class="card-img">
-                              <img
-                                src="https://bizweb.dktcdn.net/thumb/large/100/488/726/products/ezgif-com-webp-to-jpg-2c717cf9-88fd-45c2-9115-33fb8ead38b7.jpg?v=1690259134163"
-                                class="img-fluid"
-                              />
-                            </div>
-                            <div class="card-info-newProduct">
-                              <h6 class="products-name">
-                                <a href="#">Yến chưng bách niên 2</a>
-                              </h6>
-                              <div class="price-sale">
-                                <span class="aft-disc" style="margin: auto"
-                                  >225.000</span
-                                >
-                              </div>
-                              <button class="addToCard">
-                                <a href="#">Tuỳ chọn</a>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div class="slide newProduct">
+                <div class="carousel-inner product-main">
+                  <!-- test01 -->
+                  <div
+                    class="carousel-item newProduct-item active"
+                    id="product-list"
+                  ></div>
                 </div>
               </div>
             </div>
@@ -862,8 +670,8 @@
                           <span class="aft-disc">2.150.000đ</span>
                           <span class="bef-disc">2.350.000đ</span>
                         </div>
-                        <button class="addToCard">
-                          <a href="#">Thêm vào giỏ hàng</a>
+                        <button class="add-cart-button">
+                          Thêm vào giỏ hàng
                         </button>
                       </div>
                     </div>
@@ -890,8 +698,8 @@
                           <span class="aft-disc">2.250.000đ</span>
                           <span class="bef-disc">2.450.000đ</span>
                         </div>
-                        <button class="addToCard">
-                          <a href="#">Thêm vào giỏ hàng</a>
+                        <button class="add-cart-button">
+                          Thêm vào giỏ hàng
                         </button>
                       </div>
                     </div>
@@ -918,8 +726,8 @@
                           <span class="aft-disc">5.300.000đ</span>
                           <span class="bef-disc">5.600.000đ</span>
                         </div>
-                        <button class="addToCard">
-                          <a href="#">Thêm vào giỏ hàng</a>
+                        <button class="add-cart-button">
+                          Thêm vào giỏ hàng
                         </button>
                       </div>
                     </div>
@@ -946,8 +754,8 @@
                           <span class="aft-disc">5.200.000đ</span>
                           <span class="bef-disc">5.500.000đ</span>
                         </div>
-                        <button class="addToCard">
-                          <a href="#">Thêm vào giỏ hàng</a>
+                        <button class="add-cart-button">
+                          Thêm vào giỏ hàng
                         </button>
                       </div>
                     </div>
@@ -974,8 +782,8 @@
                           <span class="aft-disc">1.900.000đ</span>
                           <span class="bef-disc">2.100.000đ</span>
                         </div>
-                        <button class="addToCard">
-                          <a href="#">Thêm vào giỏ hàng</a>
+                        <button class="add-cart-button">
+                          Thêm vào giỏ hàng
                         </button>
                       </div>
                     </div>
@@ -1002,8 +810,8 @@
                           <span class="aft-disc">2.550.000đ</span>
                           <span class="bef-disc">2.700.000đ</span>
                         </div>
-                        <button class="addToCard">
-                          <a href="#">Thêm vào giỏ hàng</a>
+                        <button class="add-cart-button">
+                          Thêm vào giỏ hàng
                         </button>
                       </div>
                     </div>
@@ -1030,8 +838,8 @@
                           <span class="aft-disc">2.900.000đ</span>
                           <span class="bef-disc">3.100.000đ</span>
                         </div>
-                        <button class="addToCard">
-                          <a href="#">Thêm vào giỏ hàng</a>
+                        <button class="add-cart-button">
+                          Thêm vào giỏ hàng
                         </button>
                       </div>
                     </div>
@@ -1058,8 +866,8 @@
                           <span class="aft-disc">1.650.000đ</span>
                           <span class="bef-disc">1.950.000đ</span>
                         </div>
-                        <button class="addToCard">
-                          <a href="#">Thêm vào giỏ hàng</a>
+                        <button class="add-cart-button">
+                          Thêm vào giỏ hàng
                         </button>
                       </div>
                     </div>
@@ -1097,8 +905,8 @@
                           <span class="aft-disc">1.299.000đ</span>
                           <span class="bef-disc">1.499.000đ</span>
                         </div>
-                        <button class="addToCard">
-                          <a href="#">Thêm vào giỏ hàng</a>
+                        <button class="add-cart-button">
+                          Thêm vào giỏ hàng
                         </button>
                       </div>
                     </div>
@@ -1125,8 +933,8 @@
                           <span class="aft-disc">1.449.000đ</span>
                           <span class="bef-disc">1.649.000đ</span>
                         </div>
-                        <button class="addToCard">
-                          <a href="#">Thêm vào giỏ hàng</a>
+                        <button class="add-cart-button">
+                          Thêm vào giỏ hàng
                         </button>
                       </div>
                     </div>
@@ -1153,8 +961,8 @@
                           <span class="aft-disc">1.800.000đ</span>
                           <span class="bef-disc">2.00.000đ</span>
                         </div>
-                        <button class="addToCard">
-                          <a href="#">Thêm vào giỏ hàng</a>
+                        <button class="add-cart-button">
+                          Thêm vào giỏ hàng
                         </button>
                       </div>
                     </div>
@@ -1181,8 +989,8 @@
                           <span class="aft-disc">2.150.000đ</span>
                           <span class="bef-disc">2.350.000đ</span>
                         </div>
-                        <button class="addToCard">
-                          <a href="#">Thêm vào giỏ hàng</a>
+                        <button class="add-cart-button">
+                          Thêm vào giỏ hàng
                         </button>
                       </div>
                     </div>
@@ -1211,8 +1019,8 @@
                         <div class="price-sale" style="margin: auto">
                           <span class="aft-disc">260.000đ</span>
                         </div>
-                        <button class="addToCard">
-                          <a href="#">Thêm vào giỏ hàng</a>
+                        <button class="add-cart-button">
+                          Thêm vào giỏ hàng
                         </button>
                       </div>
                     </div>
@@ -1230,8 +1038,8 @@
                         <div class="price-sale" style="margin: auto">
                           <span class="aft-disc">250.000đ</span>
                         </div>
-                        <button class="addToCard">
-                          <a href="#">Thêm vào giỏ hàng</a>
+                        <button class="add-cart-button">
+                          Thêm vào giỏ hàng
                         </button>
                       </div>
                     </div>
@@ -1249,8 +1057,8 @@
                         <div class="price-sale" style="margin: auto">
                           <span class="aft-disc">255.000đ</span>
                         </div>
-                        <button class="addToCard">
-                          <a href="#">Thêm vào giỏ hàng</a>
+                        <button class="add-cart-button">
+                          Thêm vào giỏ hàng
                         </button>
                       </div>
                     </div>
@@ -1268,8 +1076,8 @@
                         <div class="price-sale" style="margin: auto">
                           <span class="aft-disc">225.000đ</span>
                         </div>
-                        <button class="addToCard">
-                          <a href="#">Thêm vào giỏ hàng</a>
+                        <button class="add-cart-button">
+                          Thêm vào giỏ hàng
                         </button>
                       </div>
                     </div>
@@ -1287,8 +1095,8 @@
                         <div class="price-sale" style="margin: auto">
                           <span class="aft-disc">350.000đ</span>
                         </div>
-                        <button class="addToCard">
-                          <a href="#">Thêm vào giỏ hàng</a>
+                        <button class="add-cart-button">
+                          Thêm vào giỏ hàng
                         </button>
                       </div>
                     </div>
@@ -1306,8 +1114,8 @@
                         <div class="price-sale" style="margin: auto">
                           <span class="aft-disc">460.000đ</span>
                         </div>
-                        <button class="addToCard">
-                          <a href="#">Thêm vào giỏ hàng</a>
+                        <button class="add-cart-button">
+                          Thêm vào giỏ hàng
                         </button>
                       </div>
                     </div>
@@ -1336,8 +1144,8 @@
                         <div class="price-sale" style="margin: auto">
                           <span class="aft-disc">360.000đ</span>
                         </div>
-                        <button class="addToCard">
-                          <a href="#">Thêm vào giỏ hàng</a>
+                        <button class="add-cart-button">
+                          Thêm vào giỏ hàng
                         </button>
                       </div>
                     </div>
@@ -1364,8 +1172,8 @@
                           <span class="aft-disc">299.000đ</span>
                           <span class="bef-disc">399.000đ</span>
                         </div>
-                        <button class="addToCard">
-                          <a href="#">Thêm vào giỏ hàng</a>
+                        <button class="add-cart-button">
+                          Thêm vào giỏ hàng
                         </button>
                       </div>
                     </div>
@@ -1383,8 +1191,8 @@
                         <div class="price-sale" style="margin: auto">
                           <span class="aft-disc">299.000đ</span>
                         </div>
-                        <button class="addToCard">
-                          <a href="#">Thêm vào giỏ hàng</a>
+                        <button class="add-cart-button">
+                          Thêm vào giỏ hàng
                         </button>
                       </div>
                     </div>
@@ -1463,7 +1271,7 @@
               <span class="Collapsible__Plus"></span>
             </h4>
             <div class="list-menu hidden-mobile">
-              <a href="/" title="Trang chủ">Trang chủ</a>
+              <a href="#" title="Trang chủ">Trang chủ</a>
 
               <a href="/gioi-thieu" title="Giới thiệu">Giới thiệu</a>
 
@@ -1581,6 +1389,9 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="./js/product.js"></script> -->
+    <script src="./js/store.js"></script>
+    <script src="./js/new-product.js"></script>
     <script src="./js/flash-sale.js"></script>
   </body>
 </html>
