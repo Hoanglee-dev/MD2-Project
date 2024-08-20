@@ -113,7 +113,7 @@
                         height="27"
                       />
                     </a>
-                    <span class="count_item_pr">1</span>
+                    <span class="count_item_pr" id="cart-count">0</span>
                   </div>
                 </div>
               </div>
@@ -127,7 +127,7 @@
       style="
         background: url(https://bizweb.dktcdn.net/100/488/726/themes/911609/assets/breadcrumb-bg.jpg?1705829900945%27);
         min-height: 275px;
-        width: 1519px;
+        width: 100%;
         display: flex;
         background-repeat: no-repeat;
         align-items: center;
@@ -155,31 +155,13 @@
               <th>Thành tiền</th>
             </tr>
           </thead>
-          <!-- <tbody>
-            <tr>
-              <td class="product-info">
-                <img src="bird-nest.jpg" alt="Tổ yến" class="product-image" />
-                <div class="product-details">
-                  <p>Tổ yến rút lông xuất khẩu</p>
-                  <a href="#" class="remove-link">Xóa</a>
-                </div>
-              </td>
-              <td class="product-price">
-                <span class="current-price">5.300.000₫</span><br />
-                <span class="original-price">5.600.000₫</span>
-              </td>
-              <td class="product-quantity">
-                <button class="quantity-btn">-</button>
-                <input type="number" class="quantity-input" />
-                <button class="quantity-btn">+</button>
-              </td>
-              <td class="product-total">5.300.000₫</td>
-            </tr>
-          </tbody> -->
+          <tbody id="cart-items">
+            <!-- items here -->
+          </tbody>
         </table>
         <div class="cart-summary">
-          <p>Tổng tiền: <span class="total-price">5.300.000₫</span></p>
-          <button class="checkout-btn">Thanh toán</button>
+          <p class="total-price">Tổng tiền: <span id="total-price"></span>đ</p>
+          <button class="checkout-button">Thanh toán</button>
         </div>
       </div>
     </section>
@@ -329,5 +311,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/cart-page.js"></script>
   </body>
 </html>
