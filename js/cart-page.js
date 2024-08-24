@@ -35,10 +35,13 @@ function decreMoreItem(product) {
 }
 
 function deleteProduct(id) {
-  document.getElementById(`product-item-${id}`).remove()
-  cart.removeProduct(id)
-  updateToalPriceOnDOM();
-  updateCartCount();
+  let isConfirm = confirm("Bạn chắc chứ?")
+  if (isConfirm) {
+    document.getElementById(`product-item-${id}`).remove()
+    cart.removeProduct(id)
+    updateToalPriceOnDOM();
+    updateCartCount();
+  }
 };
 
 function loadCartItems() {
@@ -58,7 +61,7 @@ function loadCartItems() {
                 <img src="${product.image}" alt="Tổ yến" class="product-image" />
                 <div class="product-details">
                   <p>${product.name}</p>
-                  <button id="delete-product-${product.id}">xoá</button>
+                  <button class="delete-product", id="delete-product-${product.id}">xoá</button>
                 </div>
               </td>
               <td class="product-price">

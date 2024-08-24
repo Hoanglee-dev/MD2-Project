@@ -7,11 +7,6 @@ class Cart {
 
   add(product) {
     const foundItem = this.listProduct.find(item => item.id == product.id);
-    // tim product.id ton tai trong this.listProduct // biet dc item
-    // - yes: 
-    //   - update quality cua item vua dc tim thay len 1
-    // - no:  
-      // this.listProduct.push(product)
       if (foundItem) {
         foundItem.quanlity += 1;
       } else {
@@ -22,11 +17,6 @@ class Cart {
 
   getList() {
       return this.listProduct;
-  }
-
-  remove(index) {
-      this.listProduct.splice(index, 1);
-      this.saveStorage();
   }
 
   getTotalItems() {

@@ -3,49 +3,11 @@ let cart = new Cart();
 function addToCart(product) {
   cart.add({...product, quanlity:1});
   cart.getList()  
+  alert(
+    `Bạn đã mua : ${product.name}`)
   const cartCountElement = document.getElementById("cart-count")
   cartCountElement.textContent = cart.getTotalItems();
 }
-
-function loadNewProducts() {
-  const productList = document.getElementById("product-list")
-  let newProduct = products.filter(percentage => percentage.disPercent == 0);
-  newProduct.map((product) => {
-    const vndPrice = product.price.toLocaleString('vi-VN');
-    const productDiv = document.createElement('div');
-    productDiv.classList.add("col-md-3")
-    productDiv.innerHTML = `
-                        <div class="box-card-newproduct">
-                          <div class="card product-thumbnail">
-                            <div class="card-img">
-                              <img
-                                src="${product.image}"
-                                class="img-fluid"
-                              />
-                            </div>
-                            <div class="card-info-newProduct">
-                              <h6 class="products-name">
-                                <a href="#">${product.name}</a>
-                              </h6>
-                              <div class="price-sale">
-                                <span class="aft-disc" style="margin: auto"
-                                  >${vndPrice}đ</span
-                                >
-                              </div>
-                              <button id="product-${product.id}" class="add-cart-button">
-                                Thêm vào giỏ hàng
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-    `; 
-    const button = productDiv.querySelector(`button#product-${product.id}`);
-    button.addEventListener('click', () => addToCart(product));
-    productList.appendChild(productDiv);
-  });
-}
-
-loadNewProducts();
 
 function loadSaleProducts() {
   let saleProduct = products.filter(percentage => percentage.disPercent > 0);
@@ -89,3 +51,44 @@ function loadSaleProducts() {
 }
 
 loadSaleProducts();
+
+function loadNewProducts() {
+  const productList = document.getElementById("product-list")
+  let newProduct = products.filter(percentage => percentage.disPercent == 0);
+  newProduct.map((product) => {
+    const vndPrice = product.price.toLocaleString('vi-VN');
+    const productDiv = document.createElement('div');
+    productDiv.classList.add("col-md-3")
+    productDiv.innerHTML = `
+                        <div class="box-card-newproduct">
+                          <div class="card product-thumbnail">
+                            <div class="card-img">
+                              <img
+                                src="${product.image}"
+                                class="img-fluid"
+                              />
+                            </div>
+                            <div class="card-info-newProduct">
+                              <h6 class="products-name">
+                                <a href="#">${product.name}</a>
+                              </h6>
+                              <div class="price-sale">
+                                <span class="aft-disc" style="margin: auto"
+                                  >${vndPrice}đ</span
+                                >
+                              </div>
+                              <button id="product-${product.id}" class="add-cart-button">
+                                Thêm vào giỏ hàng
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+    `; 
+    const button = productDiv.querySelector(`button#product-${product.id}`);
+    button.addEventListener('click', () => addToCart(product));
+    productList.appendChild(productDiv);
+    
+  });
+}
+
+loadNewProducts();
